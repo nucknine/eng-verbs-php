@@ -4,9 +4,9 @@ class verbDB {
 	const SERVER_ROOT = 'verb.nucknine.pro/';
 	//<!-- настройки сайта и константы -->
 	const DB_HOST = 'localhost'; //хранениe адреса сервера баз данных mySQL
-	const DB_LOGIN = 'uzthjwze_nuck'; //хранениe логина сервера баз данных mySQL
-	const DB_PASSWORD = 'Mrinnovja69L'; //хранениe пароля сервера баз данных mySQL
-	const DB_NAME = 'uzthjwze_wp881'; //хранениe имени сервера баз данных mySQL
+	const DB_LOGIN = ''; //хранениe логина сервера баз данных mySQL
+	const DB_PASSWORD = ''; //хранениe пароля сервера баз данных mySQL
+	const DB_NAME = ''; //хранениe имени сервера баз данных mySQL
 
 	private $_db = null;
 
@@ -18,7 +18,7 @@ class verbDB {
 
 	function __construct(){
 		try{
-		$this->_db = new PDO('mysql:host=localhost;dbname=uzthjwze_wp881', 'uzthjwze_nuck', 'Mrinnovja69L', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+		$this->_db = new PDO('mysql:host=localhost;dbname=', '', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 		}catch(PDOException $e){
 			echo "Невозможно установить соединение";
